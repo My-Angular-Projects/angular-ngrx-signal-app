@@ -11,3 +11,5 @@ export class TodoModel implements ITodo {
     public completed: boolean,
   ) {}
 }
+
+export type TodoFilterType = 'all' | 'pending' | 'completed';
