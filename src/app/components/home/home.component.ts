@@ -5,11 +5,12 @@ import {
   OnInit,
 } from '@angular/core';
 import { TodoStore } from '../../store/state/todo.state';
+import { TodoListComponent } from '../todo-list/todo-list.component';
 
 @Component({
   selector: 'sgn-home',
   standalone: true,
-  imports: [],
+  imports: [TodoListComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
